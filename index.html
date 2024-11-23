@@ -21,24 +21,28 @@
 
     <main>
       <form>
-        <label for="amount">valor</label>
+        <label for="amount">Amount</label>
         <input type="text" name="amount" id="amount" placeholder="0" required />
 
-        <label for="currency">moeda</label>
+        <label for="currency">Currency</label>
         <select name="currency" id="currency" required>
-          <option value="" disabled selected hidden>Selecione a moeda</option>
-          <option value="USD">Dólar Americano</option>
+          <option value="" disabled selected hidden>Select the currency</option>
+          <option value="USD">US dollar</option>
           <option value="EUR">Euro</option>
-          <option value="GBP">Libra Esterlina</option>
+          <option value="GBP">British Pound</option>
+          <option value="CAD">Canadian Dollar</option>
         </select>
 
-        <button type="submit">Converter em reais</button>
+        <button type="submit">Convert to BRL</button>
       </form>
 
       <footer>
-        <span id="description">US$ 1 = R$ 4,86</span>
-        <h1 id="result">486,00 Reais</h1>
+        <span id="description"></span>
+        <h1 id="result"></h1>
       </footer>
     </main>
+
+    <script src="script.js"></script>
+
   </body>
 </html>
